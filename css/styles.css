@@ -4,9 +4,21 @@ html, body {
     height: 100%;
 }
 
-nav, .copyright {
-    -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5); 
+nav {
+    -webkit-box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2); 
     box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.5);
+}
+
+.nav-item{
+    border-bottom: 2px solid;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid white;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
 }
 
 .copyright {
@@ -24,6 +36,13 @@ nav, .copyright {
     min-height: 100%;
 }
 
+.btn-social{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
 .btn-social:hover {
     color: black;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
 }
