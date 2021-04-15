@@ -22,7 +22,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPW8GBQ2YY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-FPW8GBQ2YY');
@@ -59,7 +62,7 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="main">
+    <main role="main" class="main accordion">
         <div class="container about">
             <div class="row">
                 <div class="col-auto profile-picture">
@@ -84,11 +87,24 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <h3>Portafolio</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, placeat neque autem molestias
-                    adipisci commodi! Alias modi natus quidem cumque dolores ex, fugiat officiis saepe dignissimos eos
-                    quod nihil quasi?
-                </p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://github.com/crixodia/nary-family-tree/raw/master/assets/tree-traversal.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="" class="btn btn-dark"><i class="bi bi-github"></i></a>
+                                <a href="" class="btn btn-dark"><i class="bi bi-book"></i></a>
+                                <a href="" class="btn btn-dark"><i class="bi bi-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="projects" id="projects">
@@ -130,8 +146,8 @@
     <!-- Production version -->
     <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
