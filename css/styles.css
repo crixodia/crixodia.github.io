@@ -33,7 +33,29 @@ nav {
 }
 
 .main{
-    min-height: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+}
+
+.about .col-lg{
+    padding-top: 12px;
+}
+
+.portfolio, .projects{
+    margin-top: 10px;
+}
+
+.profile-picture{
+    margin: auto;
+    display: block;
+}
+
+.profile-picture img{
+    border-radius: 100%;
+    max-width: 150px;
+    border-style: solid;
+    border-width: 4px;
 }
 
 .btn-social{
@@ -42,7 +64,7 @@ nav {
 }
 
 .btn-social:hover {
-    color: black;
+    color: red;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
 }
