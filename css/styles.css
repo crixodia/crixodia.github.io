@@ -29,6 +29,7 @@ nav {
 }
 
 .nav-item:hover {
+    cursor: pointer;
     border-bottom: 2px solid white;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
