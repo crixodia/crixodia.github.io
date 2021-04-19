@@ -36,7 +36,7 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" id="navbar">
             <div class="container">
                 <a class="navbar-brand mb-1 h1" href="/">Cristian Bastidas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,7 +45,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
@@ -53,7 +53,11 @@
                             <a class="nav-link" href="#projects">Proyectos</a>
                         </li>
                     </ul>
+
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contacto</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://crixodia.github.io/my-blog">Blog</a>
                         </li>
@@ -62,7 +66,7 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="main accordion">
+    <main role="main" class="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
         <div class="container about">
             <div class="row">
                 <div class="col-auto profile-picture">
@@ -115,6 +119,12 @@
                     mollitia quos et. F</p>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h3>Contacto</h3>
+                
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start footer">
@@ -122,16 +132,17 @@
 
         <!-- Social Networking Sites -->
         <div class="text-center p-3 bg-light text-white">
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://github.com/crixodia"><i
-                    class="bi bi-github"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://twitter.com/crixodia"><i
-                    class="bi bi-twitter"></i></a>
+            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://github.com/crixodia"
+                target="_blank"><i class="bi bi-github"></i></a>
+            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://twitter.com/crixodia"
+                target="_blank"><i class="bi bi-twitter"></i></a>
+            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://instagram.com/crixodia"
+                vtarget="_blank"><i class="bi bi-instagram"></i></a>
             <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button"
-                href="https://instagram.com/crixodia"><i class="bi bi-instagram"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://youtube.com"><i
+                href="https://www.youtube.com/channel/UCIIszmFMvyNn5gj0xwrxIsg" target="_blank"><i
                     class="bi bi-youtube"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button"
-                href="https://linkedin.com/in/crixodia"><i class="bi bi-linkedin"></i></a>
+            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://linkedin.com/in/crixodia"
+                target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
         <!-- End Social -->
         <div class="text-center p-3 bg-dark text-white copyright">
