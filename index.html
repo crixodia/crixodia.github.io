@@ -18,6 +18,7 @@
 
     <meta name="theme-color" content="#202529" />
 
+    <script src="js/rndimg.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPW8GBQ2YY"></script>
     <script>
@@ -32,15 +33,18 @@
     </script>
 
     <script>
-        function setScroll(id) {
-            var html = document.documentElement;
-            var el = document.getElementById(id);
-            el.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                inline: "nearest"
-            });
-            html.scrollTop -= 65;
+        counter = 0
+        flag = true;
+        function easterEgg() {
+            el = document.getElementsByName('profile-picture-img');
+            counter++;
+            if(counter >= 5){
+                if(flag){
+                    console.log("You've discovered who I am 😱");
+                    flag = false;
+                }
+                console.log(randomize());
+            }
         }
     </script>
 
@@ -60,16 +64,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" onclick="setScroll('portfolio');">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="setScroll('projects');">Proyectos</a>
+                            <a class="nav-link" href="#projects">Proyectos</a>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" onclick="setScroll('contact');">Contacto</a>
+                            <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://crixodia.github.io/my-blog">Blog</a>
@@ -83,7 +87,7 @@
         <div class="container about">
             <div class="row">
                 <div class="col-auto profile-picture">
-                    <img src="https://avatars.githubusercontent.com/u/6288158?v=4" class="">
+                    <img name="profile-picture-img" onclick="easterEgg()" src="https://avatars.githubusercontent.com/u/6288158?v=4" class="">
                 </div>
                 <div class="col-lg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ipsam, aliquid accusamus

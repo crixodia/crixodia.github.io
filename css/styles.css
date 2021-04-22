@@ -2,6 +2,7 @@
 
 html,
 body {
+    font-display: swap;
     height: 100%;
     position: relative;
 }
@@ -66,6 +67,7 @@ nav {
 }
 
 .profile-picture img {
+    object-fit: cover;
     border-radius: 100%;
     max-width: 150px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.5);
