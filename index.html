@@ -35,11 +35,12 @@
     <script>
         counter = 0
         flag = true;
+
         function easterEgg() {
             el = document.getElementsByName('profile-picture-img');
             counter++;
-            if(counter >= 5){
-                if(flag){
+            if (counter >= 5) {
+                if (flag) {
                     console.log("You've discovered who I am 😱");
                     flag = false;
                 }
@@ -73,7 +74,7 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacto</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact" href="">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://crixodia.github.io/my-blog">Blog</a>
@@ -87,7 +88,8 @@
         <div class="container about">
             <div class="row">
                 <div class="col-auto profile-picture">
-                    <img name="profile-picture-img" onclick="easterEgg()" src="https://avatars.githubusercontent.com/u/6288158?v=4" class="">
+                    <img name="profile-picture-img" onclick="easterEgg()"
+                        src="https://avatars.githubusercontent.com/u/6288158?v=4" class="">
                 </div>
                 <div class="col-lg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ipsam, aliquid accusamus
@@ -110,7 +112,7 @@
                 <h3>Portafolio</h3>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4">
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#portfolio-1">
                             <img src="https://github.com/crixodia/nary-family-tree/raw/master/assets/tree-traversal.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
@@ -119,9 +121,10 @@
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <div class="card-footer text-end">
-                                <a href="" class="btn btn-dark"><i class="bi bi-github"></i></a>
-                                <a href="" class="btn btn-dark"><i class="bi bi-book"></i></a>
-                                <a href="" class="btn btn-dark"><i class="bi bi-share"></i></a>
+                                <button type="button" class="btn btn-secondary"><i class="bi bi-github"></i></button>
+                                <button data-bs-toggle="modal" data-bs-target="#portfolio-1" type="button"
+                                    class="btn btn-secondary"><i class="bi bi-book"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="bi bi-share"></i></button>
                             </div>
                         </div>
                     </div>
@@ -131,17 +134,64 @@
         <section class="projects" id="projects">
             <div class="container">
                 <h3>Projectos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente velit rerum unde adipisci corporis
-                    architecto ut minus corrupti ea! Numquam ullam consequatur optio autem, assumenda laudantium dolore
-                    mollitia quos et. F</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente velit rerum unde adipisci
+                    corporis
+                    architecto ut minus corrupti ea! Numquam ullam consequatur optio autem, assumenda laudantium
+                    dolore
+                    mollitia quos et. F
+                </p>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <div class="container">
-                <h3>Contacto</h3>
 
+        <!-- Portfolio 1 Modal -->
+        <div class="modal fade" id="portfolio-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-xxl-down modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Portafolio 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quo quod quidem tempora
+                        pariatur ipsum nihil deleniti! Obcaecati totam consequatur impedit illum reprehenderit unde
+                        animi incidunt accusamus a, magnam beatae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum iste maxime? Perspiciatis, id?
+                        Exercitationem iusto nemo vel neque, dolorem temporibus, magni cumque rerum mollitia ducimus
+                        distinctio quibusdam beatae deleniti.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio in culpa tenetur provident
+                        doloribus laborum sapiente repellat exercitationem maxime, sed, pariatur vel reprehenderit
+                        cupiditate ut impedit illum, voluptas illo non.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo sequi quasi, mollitia possimus
+                        dolor aliquam facilis architecto alias. Possimus quam modi a recusandae impedit officiis ea
+                        soluta dolorem vel ut.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maxime, eius ea sed suscipit
+                        ullam pariatur itaque ipsa illo numquam. Cumque, quo! Rerum illo natus vitae corporis unde eius
+                        obcaecati!
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        INSERTAR CONTENIDO
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start footer">
