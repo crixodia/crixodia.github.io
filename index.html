@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-auto profile-picture">
                     <img name="profile-picture-img" onclick="easterEgg()"
-                        src="https://avatars.githubusercontent.com/u/6288158?v=4" class="">
+                        src="https://avatars.githubusercontent.com/u/6288158?v=4" width="150px" class="">
                 </div>
                 <div class="col-lg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et ipsam, aliquid accusamus
@@ -112,10 +112,11 @@
                 <h3>Portafolio</h3>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4">
                     <div class="col">
-                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#portfolio-1">
-                            <img src="https://github.com/crixodia/nary-family-tree/raw/master/assets/tree-traversal.png"
+                        <div class="card h-100">
+                            <img data-bs-toggle="modal" data-bs-target="#portfolio-1"
+                                src="https://github.com/crixodia/nary-family-tree/raw/master/assets/tree-traversal.png"
                                 class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body" data-bs-toggle="modal" data-bs-target="#portfolio-1">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -131,15 +132,25 @@
                 </div>
             </div>
         </section>
+
+
         <section class="projects" id="projects">
             <div class="container">
                 <h3>Projectos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente velit rerum unde adipisci
-                    corporis
-                    architecto ut minus corrupti ea! Numquam ullam consequatur optio autem, assumenda laudantium
-                    dolore
-                    mollitia quos et. F
-                </p>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-6">
+                    <div class="col">
+                        <a href="#" target="_blank">
+                            <div class="card bg-dark text-white">
+                                <img src="https://avatars.githubusercontent.com/u/6288158?v=4" class="card-img"
+                                    width="100px" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">crixodiacs</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
             </div>
         </section>
 
@@ -168,9 +179,9 @@
                         ullam pariatur itaque ipsa illo numquam. Cumque, quo! Rerum illo natus vitae corporis unde eius
                         obcaecati!
                     </div>
-                    <div class="modal-footer">
+                    <!--div class="modal-footer">
 
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -186,9 +197,9 @@
                     <div class="modal-body">
                         INSERTAR CONTENIDO
                     </div>
-                    <div class="modal-footer">
+                    <!--div class="modal-footer">
 
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>

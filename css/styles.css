@@ -14,7 +14,24 @@ nav {
 
 .card {
     transition: all .5s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 320px) {
+    .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.card img, .card-body{
     cursor: pointer;
+}
+
+.card .card-img {
+    filter: opacity(20%);
 }
 
 .card:hover {
@@ -23,12 +40,12 @@ nav {
     transition: all .2s ease;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #3F474F;
     border: none;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #212529;
 }
 
@@ -68,7 +85,7 @@ nav {
 
 .portfolio,
 .projects {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .profile-picture {
