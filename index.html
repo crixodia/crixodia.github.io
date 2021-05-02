@@ -16,7 +16,7 @@
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
     <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
 
-    <meta name="theme-color" content="#202529" />
+    <meta name="theme-color" content="#181818" />
 
     <script src="js/rndimg.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -52,7 +52,7 @@
     <title>Cristian Bastidas</title>
 </head>
 
-<body>
+<body class="bg-dark">
     <header>
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" id="navbar">
             <div class="container">
@@ -68,13 +68,13 @@
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Proyectos</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact" href="">Contacto</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact" href="">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://crixodia.github.io/my-blog">Blog</a>
@@ -84,7 +84,7 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="main">
+    <main role="main" class="main text-white-50">
         <div class="container about">
             <div class="row">
                 <div class="col-auto profile-picture">
@@ -109,7 +109,7 @@
         </div>
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <h3>Portafolio</h3>
+                <h3 class="text-light">Portfolio</h3>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-4">
                     <div class="col">
                         <div class="card h-100">
@@ -117,7 +117,7 @@
                                 src="https://github.com/crixodia/nary-family-tree/raw/master/assets/tree-traversal.png"
                                 class="card-img-top" alt="...">
                             <div class="card-body" data-bs-toggle="modal" data-bs-target="#portfolio-1">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title text-light">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
@@ -136,7 +136,7 @@
 
         <section class="projects" id="projects">
             <div class="container">
-                <h3>Projectos</h3>
+                <h3 class="text-light">Projects</h3>
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 g-6">
                     <div class="col">
                         <a href="#" target="_blank">
@@ -157,10 +157,10 @@
         <!-- Portfolio 1 Modal -->
         <div class="modal fade" id="portfolio-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-xxl-down modal-xl">
-                <div class="modal-content">
+                <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Portafolio 1</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Portafolio 1</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="modal-body">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quo quod quidem tempora
@@ -189,10 +189,10 @@
         <!-- Contact Modal -->
         <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-                <div class="modal-content">
+                <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Contacto</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="modal-body">
                         INSERTAR CONTENIDO
@@ -205,26 +205,27 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start footer">
+    <footer class="text-center text-lg-start footer">
         <!-- Footer Content Here -->
 
         <!-- Social Networking Sites -->
-        <div class="text-center p-3 bg-light text-white">
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://github.com/crixodia"
+        <div class="text-center p-3">
+            <a class="fs-4 m-2 btn-link btn-social" role="button" href="https://github.com/crixodia"
                 target="_blank"><i class="bi bi-github"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://twitter.com/crixodia"
+            <a class="fs-4 m-2 btn-link btn-social" role="button" href="https://twitter.com/crixodia"
                 target="_blank"><i class="bi bi-twitter"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://instagram.com/crixodia"
+            <a class="fs-4 m-2 btn-link btn-social" role="button" href="https://instagram.com/crixodia"
                 vtarget="_blank"><i class="bi bi-instagram"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button"
+            <a class="fs-4 m-2 btn-link btn-social" role="button"
                 href="https://www.youtube.com/channel/UCIIszmFMvyNn5gj0xwrxIsg" target="_blank"><i
                     class="bi bi-youtube"></i></a>
-            <a class="fs-4 link-secondary m-2 btn-link btn-social" role="button" href="https://linkedin.com/in/crixodia"
+            <a class="fs-4 m-2 btn-link btn-social" role="button" href="https://linkedin.com/in/crixodia"
                 target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
         <!-- End Social -->
-        <div class="text-center p-3 bg-dark text-white copyright">
-            Hecho con ♥ por crixodia - 2021
+        <hr class="footer-divider text-white-50">
+        <div class="text-center p-3 text-white-50 copyright">
+            Cristian Bastidas - 2021
         </div>
         <!-- Copyright -->
     </footer>
