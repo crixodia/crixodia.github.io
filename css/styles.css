@@ -82,6 +82,7 @@ nav {
 
 .card-img {
     filter: opacity(20%);
+    object-fit: cover !important;
 }
 
 .card:hover {
