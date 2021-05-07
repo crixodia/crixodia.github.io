@@ -77,7 +77,7 @@
                             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact" href="">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://crixodia.github.io/my-blog">Blog</a>
+                            <a class="nav-link" target="_blank" href="https://crixodia.github.io/my-blog">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +144,7 @@
                                 <img src="/assets/projects/twitch.webp" class="card-img" width="100px" alt="...">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Twitch</h5>
-                                    <p class="card-text">Streams programando o investigando computación.</p>
+                                    <p class="card-text">Coding and computer science stuff. 🇺🇸 🇪🇸</p>
                                 </div>
                             </div>
                         </a>
@@ -156,7 +156,7 @@
                                 <img src="/assets/projects/youtube.webp" class="card-img" width="100px" alt="...">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">YouTube</h5>
-                                    <p class="card-text">Aquí enseño y aprendo ciencias de la computación</p>
+                                    <p class="card-text">Teaching and learning computer science. 🇪🇸</p>
                                 </div>
                             </div>
                         </a>
@@ -168,7 +168,7 @@
                                 <img src="/assets/projects/tiktok.webp" class="card-img" width="100px" alt="...">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">TikTok</h5>
-                                    <p class="card-text">Explico cosas en 1 minuto o menos.</p>
+                                    <p class="card-text">Explaining computer stuff in 1 minute. 🇪🇸</p>
                                 </div>
                             </div>
                         </a>
@@ -177,10 +177,10 @@
                     <div class="col">
                         <a href="https://cristianbastidas.com/my-blog" target="_blank">
                             <div class="card bg-dark text-white">
-                                <img src="/assets/projects/twitch.webp" class="card-img" width="100px" alt="...">
+                                <img src="/assets/projects/blog.webp" class="card-img" width="100px" alt="...">
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">Blog</h5>
-                                    <p class="card-text">Comparto lo que aprendo para los que gustan leer.</p>
+                                    <p class="card-text">Sharing my knowledge and experiences. 🇺🇸 🇪🇸</p>
                                 </div>
                             </div>
                         </a>
@@ -227,25 +227,36 @@
             <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h5 class="modal-title text-light" id="exampleModalLabel">Contacto</h5>
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Contact</h5>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"><i
                                 class="bi bi-x"></i></button>
                     </div>
+
                     <div class="modal-body">
                         <form action="https://formspree.io/f/xvodzdeq" method="POST">
-                            <label>
-                                Your email:
-                                <input type="email" name="_replyto">
-                            </label>
-                            <label>
-                                Your message:
-                                <textarea name="message"></textarea>
-                            </label>
+                            <div class="mb-3">
+                                <label for="form-email" class="form-label">Your email address:</label>
+                                <input type="email" class="form-control" placeholder="name@example.com" id="form-email"
+                                    name="_replyto">
+                            </div>
 
-                            <!-- your other form fields go here -->
+                            <div class="mb-3">
+                                <label for="form-subject" class="form-label">Subject:</label>
+                                <input type="text" class="form-control" id="form-subject" placeholder="Greetings"
+                                    name="_subject">
+                            </div>
 
-                            <button type="submit">Send</button>
+                            <div class="mb-3">
+                                <label for="form-msg" class="form-label">Message:</label>
+                                <textarea name="_message" id="form-msg" class="form-control"
+                                    placeholder="Hello world!"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-secondary float-end">Send</button>
+                            </div>
                         </form>
+                        <p >Or just text me on <a class="text-light" target="_blank" href="http://twitter.com/crixodia">twitter</a></p>
                     </div>
                     <!--div class="modal-footer">
 
