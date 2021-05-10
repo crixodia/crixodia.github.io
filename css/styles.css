@@ -29,6 +29,13 @@ nav {
     -webkit-transition: all .5s ease;
 }
 
+.disabled:hover{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
 .main {
     margin-top: 80px;
     margin-bottom: 100px;
