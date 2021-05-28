@@ -41,15 +41,6 @@ nav {
     margin-bottom: 100px;
 }
 
-<<<<<<< HEAD
-img {
-    padding-top: 70px;
-    padding-left: 40px;
-    margin: auto;
-    display: block;
-}
-
-=======
 .profile-picture {
     margin: auto;
     display: block;
@@ -149,7 +140,6 @@ img {
     padding: 0%;
 }
 
->>>>>>> main
 .btn-social {
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
