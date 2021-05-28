@@ -103,6 +103,10 @@ nav {
     border: none;
 }
 
+.btn-resume {
+    padding: 1px 10px;
+}
+
 .form-control:focus {
     border-color: transparent;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 5px rgb(70, 70, 70);
