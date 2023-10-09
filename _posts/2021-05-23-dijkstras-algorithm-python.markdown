@@ -1,12 +1,12 @@
 ---
 title: "Dijkstra's algorithm in Python"
 categories: [Algorithms, Python]
-tags: [Python, Graph Theory, Dijkstra's algorithm]
+tags: [Python, Graph Theory, Dijkstra's Algorithm]
 date: 2021-05-23 11:55:00 -0500
 math: true
 mermaid: true
 pin: false
-img_path: /assets/img/posts/python-dijkstra/
+img_path: /assets/img/posts/dijkstras-algorithm-python/
 image:
   path: python-dijkstra-post.webp
 ---

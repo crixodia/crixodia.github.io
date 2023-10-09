@@ -6,7 +6,7 @@ date: 2021-05-16 15:14:00 -0500
 math: false
 mermaid: false
 pin: false
-img_path: /assets/img/posts/game-of-life/
+img_path: /assets/img/posts/conways-game-of-life-fascinating-cellular-automaton/
 image:
   path: game-of-life-post.gif
 ---

@@ -6,7 +6,7 @@ date: 2021-05-09 15:14:00 -0500
 math: false
 mermaid: true
 pin: false
-img_path: /assets/img/posts/nary-family-tree/
+img_path: /assets/img/posts/exploring-n-ary-trees-practical-approach/
 image:
   path: nary-family-tree-post.webp
 # alt: image alternative text
