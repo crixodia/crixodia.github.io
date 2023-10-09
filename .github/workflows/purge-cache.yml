@@ -3,6 +3,7 @@ on: push
 
 jobs:
   deploy:
+    environment: cloudflare
     runs-on: ubuntu-latest
     steps:
     - name: Purge Cache
@@ -10,4 +11,3 @@ jobs:
       env:
         CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
         CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
-        
