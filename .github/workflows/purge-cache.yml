@@ -1,5 +1,9 @@
 name: cloudflare
-on: push
+on:
+  push:
+    paths:
+    - '**.markdown'
+    - '**.webp'
 
 jobs:
   deploy:
