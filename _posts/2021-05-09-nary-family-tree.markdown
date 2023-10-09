@@ -159,4 +159,4 @@ _Graphical user interface_
 
 ## Download the Entire Project
 
-If you're interested in exploring the entire project, you can download it from [GitHub](http://github.com/crixodia/nary-family-tree). Feel free to leave your comments and feedback!
+If you're interested in exploring the entire project, you can download it from [GitHub](https://github.com/crixodia/nary-family-tree). Feel free to leave your comments and feedback!
