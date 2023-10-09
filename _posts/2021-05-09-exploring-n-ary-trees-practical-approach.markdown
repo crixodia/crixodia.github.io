@@ -1,9 +1,9 @@
 ---
 title: "Exploring N-ary Trees: A Practical Approach"
-categories: [Data Structures, Algorithms]
+categories: [Data Structures, Java]
 tags: [N-ary Trees, Java, GUI Development, Parsing]
 date: 2021-05-09 15:14:00 -0500
-math: true
+math: false
 mermaid: true
 pin: false
 img_path: /assets/img/posts/nary-family-tree/

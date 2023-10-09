@@ -1,10 +1,10 @@
 ---
 title: "Conway's Game of Life: A Fascinating Cellular Automaton"
-categories: [Simulation, Games]
+categories: [Simulation, Java]
 tags: [Conway's Game of Life, Cellular Automaton, Java, GUI Development]
 date: 2021-05-16 15:14:00 -0500
-math: true
-mermaid: true
+math: false
+mermaid: false
 pin: false
 img_path: /assets/img/posts/game-of-life/
 image:
