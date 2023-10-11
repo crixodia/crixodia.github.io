@@ -1,12 +1,12 @@
 ---
-title: "Exploring N-ary Trees: A Practical Approach"
+title: "N-ary Trees: A Practical Approach"
 categories: [Data Structures, Java]
 tags: [N-ary Trees, Java, GUI Development, Parsing]
 date: 2021-05-09 15:14:00 -0500
 math: false
 mermaid: true
 pin: false
-img_path: /assets/img/posts/exploring-n-ary-trees-practical-approach/
+img_path: /assets/img/posts/n-ary-trees-practical-approach/
 image: nary-family-tree-post.webp
 ---
 Unlike binary trees, which have only two child nodes, n-ary trees can have any number of child nodes. In this post, we will dive into the world of n-ary trees and explore their application in managing family trees.

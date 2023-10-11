@@ -1,12 +1,12 @@
 ---
-title: "Conway's Game of Life: A Fascinating Cellular Automaton"
+title: "Conway's Game of Life: Developing a Cellular Automaton"
 categories: [Simulation, Java]
 tags: [Conway's Game of Life, Cellular Automaton, Java, GUI Development]
 date: 2021-05-16 15:14:00 -0500
 math: false
 mermaid: false
 pin: false
-img_path: /assets/img/posts/conways-game-of-life-fascinating-cellular-automaton/
+img_path: /assets/img/posts/conways-game-of-life-developing-cellular-automaton/
 image: game-of-life-post.webp
 ---
 Conway's Game of Life, designed by John Horton Conway in 1970, is a captivating cellular automaton. What makes it truly intriguing is that it's a game of zero players, meaning its evolution is solely determined by the initial state, without requiring any input once the game starts.
