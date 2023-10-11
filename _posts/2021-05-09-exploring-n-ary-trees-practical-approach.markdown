@@ -8,7 +8,7 @@ mermaid: true
 pin: false
 img_path: /assets/img/posts/exploring-n-ary-trees-practical-approach/
 image:
-  path: nary-family-tree-post.webp
+  path: nary-family-tree-post.jpg
 # alt: image alternative text
 ---
 Unlike binary trees, which have only two child nodes, n-ary trees can have any number of child nodes. In this post, we will dive into the world of n-ary trees and explore their application in managing family trees.
