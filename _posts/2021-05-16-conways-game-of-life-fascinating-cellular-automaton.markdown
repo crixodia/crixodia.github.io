@@ -8,7 +8,7 @@ mermaid: false
 pin: false
 img_path: /assets/img/posts/conways-game-of-life-fascinating-cellular-automaton/
 image:
-  path: game-of-life-post.gif
+  path: game-of-life-post.webp
 ---
 Conway's Game of Life, designed by John Horton Conway in 1970, is a captivating cellular automaton. What makes it truly intriguing is that it's a game of zero players, meaning its evolution is solely determined by the initial state, without requiring any input once the game starts.
 
