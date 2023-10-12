@@ -7,8 +7,7 @@ math: true
 mermaid: false
 pin: false
 img_path: /assets/img/posts/linear-algebra-efficient-strassen-matrix-multiplication
-image:
-  path: strassen-post.webp
+image: strassen-post.webp
 ---
 In college, you've probably encountered linear algebra and learned about matrix multiplication. You may have implemented a matrix multiplication algorithm using nested for loops, which has a time complexity of $$O(n^3)$$. In this blog post, we'll explore the Strassen algorithm, an efficient method for multiplying large matrices.
 

@@ -7,8 +7,7 @@ math: true
 mermaid: true
 pin: false
 img_path: /assets/img/posts/dijkstras-algorithm-python/
-image:
-  path: python-dijkstra-post.webp
+image: python-dijkstra-post.webp
 ---
 If you're studying engineering or computer science, you've likely encountered graph theory, a fascinating field with myriad applications in these disciplines.
 
