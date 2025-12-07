@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <style>
-        /* 1. Reset and Variables */
         :root {
-            /* Extracted Colors from Image */
-            --bg-body: #0a0a0a;       /* Very dark background */
-            --bg-card: #121212;       /* Slightly lighter card bg */
-            --border-color: #2a2a2a;  /* Subtle borders */
-            --text-main: #ffffff;     /* Bright white text */
-            --text-sub: #888888;      /* Muted grey text */
-            --accent: #f59e0b;        /* The Gold/Orange accent color */
-            
-            --radius-card: 12px;
-            --radius-input: 6px;
+            --bg-body: #000;
+            --bg-card: #141414;
+            --border-color: #2a2a2a;
+            --text-main: #ffffff;
+            --text-sub: #ffffff;
+            --text-muted: #888888;
+            --accent: #ffae00;
+            --radius-card: 5px;
+            --radius-input: 5px;
         }
 
         * {
@@ -26,7 +24,6 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        /* 2. Main Layout */
         body {
             background-color: var(--bg-body);
             color: var(--text-main);
@@ -37,18 +34,15 @@
             padding: 20px;
         }
 
-        /* 3. The Card Container */
         .profile-card {
             background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
             border-radius: var(--radius-card);
             padding: 2rem;
             width: 100%;
-            max-width: 450px; /* Limits width similar to image */
+            max-width: 450px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
-        /* Header styling to match "Cristian Bastidas" text style */
         .form-header {
             margin-bottom: 1.5rem;
         }
@@ -64,7 +58,6 @@
             font-size: 0.9rem;
         }
 
-        /* 4. Form Styling */
         form {
             display: flex;
             flex-direction: column;
@@ -80,7 +73,6 @@
             font-weight: 500;
         }
 
-        /* Input styling to match the dark aesthetic */
         input, textarea {
             background-color: #1a1a1a;
             border: 1px solid var(--border-color);
@@ -94,7 +86,7 @@
         input:focus, textarea:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 1px var(--accent); /* Subtle glow */
+            box-shadow: 0 0 0 1px var(--accent);
         }
 
         textarea {
@@ -102,12 +94,11 @@
             resize: vertical;
         }
 
-        /* 5. The Button (Replicating the 'Share'/'Contact' buttons) */
         button {
             margin-top: 1rem;
             background-color: transparent;
-            border: 1px solid var(--accent); /* Thin orange border */
-            color: var(--accent);            /* Orange text */
+            border: 1px solid var(--accent);
+            color: var(--accent);
             padding: 12px;
             border-radius: var(--radius-input);
             font-size: 1rem;
@@ -117,7 +108,7 @@
         }
 
         button:hover {
-            background-color: rgba(245, 158, 11, 0.1); /* Slight orange tint on hover */
+            background-color: rgba(245, 158, 11, 0.1);
             transform: translateY(-1px);
         }
 
@@ -125,32 +116,45 @@
             transform: translateY(0);
         }
 
+        .btn-return {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+            padding: 10px;
+        }
+
+        .btn-return:hover {
+            color: var(--accent);
+        }
+
     </style>
 </head>
 <body>
-
     <div class="profile-card">
-        
         <div class="form-header">
             <h2>Get in Touch</h2>
-            <p>Send me a message directly.</p>
         </div>
-
+        
         <form action="https://formspree.io/f/xvodzdeq" method="POST">
             <label>
                 Your Email
                 <input type="email" name="email" placeholder="name@example.com" required>
             </label>
-            
             <label>
                 Your Message
                 <textarea name="message" placeholder="Type your message here..." required></textarea>
             </label>
-            
             <button type="submit">Send Message</button>
         </form>
 
-    </div>
+        <a href="https://crixodia.com/" class="btn-return">
+            &larr; Return to crixodia.com
+        </a>
 
+    </div>
 </body>
 </html>
